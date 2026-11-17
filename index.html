@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GrandHighlights Terms & Privacy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Inter:wght@400;600&display=swap">
+<style>
+/* Ruhige Rechtsseite: eine Spalte, Lila-Akzent des Kanals */
+:root { --bg:#faf9fc; --fg:#1d1a24; --muted:#5f5a6b; --line:#e3dfea; --accent:#7a3cf0;
+  --display:"Space Grotesk", system-ui, sans-serif; --body:Inter, system-ui, sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#15131a; --fg:#ece9f2; --muted:#a9a3b6; --line:#2c2836; --accent:#b08cff; color-scheme: dark } }
+:root[data-theme="dark"] { --bg:#15131a; --fg:#ece9f2; --muted:#a9a3b6; --line:#2c2836; --accent:#b08cff; color-scheme: dark }
+body { background:var(--bg); color:var(--fg); font:16px/1.65 var(--body); }
+main { max-width: 68ch; margin: 0 auto; padding-block: 48px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display:grid; gap:28px; }
+h1, h2 { font-family: var(--display); text-wrap: balance; line-height:1.2; margin:0; }
+h1 { font-size: 2rem; } h2 { font-size: 1.3rem; padding-top: 12px; border-top: 1px solid var(--line); }
+p, ul { margin: 0; } ul { padding-left: 1.2em; display:grid; gap:6px; }
+.meta { color: var(--muted); font-size: .9rem; }
+a { color: var(--accent); }
+section { display:grid; gap:12px; }
+nav { display:flex; gap:16px; flex-wrap:wrap; font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+  <header style="display:grid;gap:8px">
+    <h1>GrandHighlights – Terms of Service &amp; Privacy Policy</h1>
+    <p class="meta">App: SonaroHighlight · TikTok account @grandhighlights1 · Last updated: 17 November 2026</p>
+    <nav><a href="#terms">Terms of Service</a><a href="#privacy">Privacy Policy</a></nav>
+  </header>
+
+  <section id="terms">
+    <h2>Terms of Service</h2>
+    <p>SonaroHighlight is a private desktop tool operated by the owner of the TikTok account @grandhighlights1. It edits publicly available Twitch clips of streamers who have agreed to be featured into short compilation videos and publishes them to that one TikTok account.</p>
+    <ul>
+      <li>The tool is used only by its owner. It is not offered to other TikTok users and no one else can sign in to it.</li>
+      <li>Every video credits each streamer by name and Twitch channel.</li>
+      <li>Videos follow the TikTok Community Guidelines. Clips with hate, violence, sexual content, dangerous acts or clearly audible copyrighted music are excluded.</li>
+      <li>Streamers can ask for their clips to be removed at any time via a direct message to @grandhighlights1 on TikTok. Removal happens promptly.</li>
+      <li>The tool is provided as is, without warranty.</li>
+    </ul>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>This policy explains what data SonaroHighlight processes when it connects to TikTok.</p>
+    <ul>
+      <li><strong>TikTok data:</strong> after the owner signs in with TikTok Login Kit, the tool stores an access token and refresh token locally on the owner's computer. It uses them only to read basic account info (scope <code>user.info.basic</code>) and to upload videos to the owner's own account (scopes <code>video.upload</code> and <code>video.publish</code>).</li>
+      <li><strong>No other users:</strong> the tool does not collect, store or share data of any other TikTok user.</li>
+      <li><strong>Twitch data:</strong> the tool reads public clip information (title, view count, link) from the official Twitch API.</li>
+      <li><strong>No sharing or selling:</strong> no data is sold or passed to third parties. Tokens never leave the owner's computer except in requests to TikTok's own API.</li>
+      <li><strong>Deletion:</strong> the owner can revoke access at any time in the TikTok app under Settings → Security → Manage app permissions, and delete the local token file.</li>
+      <li><strong>Contact:</strong> direct message to @grandhighlights1 on TikTok.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
